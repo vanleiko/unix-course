@@ -15,9 +15,7 @@ function compare_numbers  {
 	else
 		result="Lower"
 	fi
-
 	echo $result
-
 }
 
 continue_game="Yes"
@@ -36,15 +34,12 @@ do
 
 	elif [[ $output = "Greater" ]]
 	then
-		echo "Your answer was too high!"
-		echo "Try again:"
+		echo "Your answer was too high! Try again:"
 
 	elif [[ $output = "Lower" ]]
 	then
-		echo "Your answer was to low..."
-		echo "Try again:"
+		echo "Your answer was to low... try again:"
 	fi
 done
-
 echo "END OF THE GAME"
 echo "Thanks for playing :) "
