@@ -3,7 +3,7 @@
 function compare_numbers  {
 
 	read input_num
-	local number=3
+	local number=$(ls | wc -l)
 
 	if [[ $input_num = $number ]]
 	then
@@ -17,6 +17,7 @@ function compare_numbers  {
 	fi
 	echo $result
 }
+
 
 continue_game="Yes"
 
